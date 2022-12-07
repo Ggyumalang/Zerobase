@@ -17,6 +17,7 @@ public class Exam3 {
 
     private static void dfs(int[] numbers, int depth, int target , int result) {
         if(depth == numbers.length) {
+            System.out.println(result);
             if(target == result) {
                 cnt++;
             }
