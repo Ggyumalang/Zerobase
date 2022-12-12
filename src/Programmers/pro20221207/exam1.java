@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 //백준 2564 경비원 문제
-=======
->>>>>>> origin/master
 package Programmers.pro20221207;
 
 import java.io.BufferedReader;
