@@ -23,7 +23,7 @@ public class exam03 {
                 return x[1] - y[1];
             }
             return x[0] - y[0];
-        }); //끝나는 시간 순으로 정렬한다.
+        }); //시작 시간으로 정렬후 시작시간이 같다면 끝나는 시간 순으로 정렬한다.
         PriorityQueue<Integer> pq = new PriorityQueue<>(); //끝나는 시간을 오름차순으로..
         pq.offer(lecture[0][1]);
 
