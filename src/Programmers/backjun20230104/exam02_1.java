@@ -28,9 +28,10 @@ public class exam02_1 {
                 if(j >= coins[i]){
                     dp[j] = dp[j] + dp[j-coins[i]];
                 }
-            System.out.println(Arrays.toString(dp));
             }
         }
+
+        System.out.println(dp[K]);
 
     }
 }
