@@ -49,6 +49,10 @@ public class exam03 {
 
             //이미 다음 지점까지 가기 위해 게임한 횟수가 현재 지점에서 한번 더 한것 보다 크다면 어차피 작으므로 할 이유 x
             if(cnt < dp[xNext][yNext]){
+                System.out.println("cnt = " + cnt);
+                System.out.println("xNext = " + xNext);
+                System.out.println("yNext = " + yNext);
+                System.out.println("dp[xNext][yNext] = " + dp[xNext][yNext]);
                 continue;
             }
 
