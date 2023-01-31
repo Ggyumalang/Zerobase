@@ -1,3 +1,4 @@
+//타겟의 수만큼 과제를 하는 시간을 이분탐색하는 방법으로..
 package Programmers.pro20230125;
 
 import java.util.Arrays;
