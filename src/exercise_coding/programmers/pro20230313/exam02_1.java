@@ -1,4 +1,4 @@
-//사다리놓기
+//지형 이동
 package exercise_coding.programmers.pro20230313;
 
 import java.util.*;
