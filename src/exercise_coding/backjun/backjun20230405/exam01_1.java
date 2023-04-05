@@ -53,8 +53,8 @@ public class exam01_1 {
         for (int i = 1; i < H+1; i++) {
             int broken = 0;
 
-            broken += stalactite_sum[H] - stalactite_sum[H-i];
-            broken += stalagmite_sum[H] - stalagmite_sum[i-1];
+            broken += stalactite_sum[H] - stalactite_sum[H-i]; //총 갯수에서 총 높이 - 타겟 높이 이상인 종유석들을 빼주는데 이들은 파괴되지 않기 때문이다.
+            broken += stalagmite_sum[H] - stalagmite_sum[i-1]; //총 갯수에서 높이 이하인 석순을 빼주는데 그 이유는 타겟 높이 이하인 석순들은 파괴되지 않으므로..
 
             if(minBreak > broken){
                 minBreak = broken;
