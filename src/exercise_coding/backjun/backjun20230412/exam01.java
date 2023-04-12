@@ -1,3 +1,4 @@
+//백준 14502 - 연구소
 package exercise_coding.backjun.backjun20230412;
 
 import java.io.BufferedReader;
