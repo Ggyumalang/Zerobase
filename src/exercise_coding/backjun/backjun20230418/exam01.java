@@ -22,7 +22,7 @@ public class exam01 {
         //접두 접미 => a , n , t , i , c 는 무조건 배워야 하니 k 가 5 이상이어야 한다.
         if(K < 5){
             System.out.println(0);
-        } else if (K == ALPHABET_LEN) {
+        } else if (K >= ALPHABET_LEN) {
             //알파벳의 갯수인 26이라면 모든 단어를 배울 수 있다.
             System.out.println(N);
         } else {
