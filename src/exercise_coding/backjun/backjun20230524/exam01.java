@@ -1,5 +1,4 @@
 //백준 - 벽 부수고 이동하기 2206번
-//3차원으로 해야 맞음.. 2차원으로 했다가 한번틀림
 package exercise_coding.backjun.backjun20230524;
 
 import java.io.BufferedReader;
