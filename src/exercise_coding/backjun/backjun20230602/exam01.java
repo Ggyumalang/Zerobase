@@ -27,6 +27,7 @@ public class exam01 {
         List<Integer> minus = new ArrayList<>();
 
         for (int i = 0; i < N; i++) {
+//            System.out.println(st.nextToken());
             books[i] = Integer.parseInt(st.nextToken());
             if(books[i] >= 0) {
                 plus.add(books[i]);
@@ -36,7 +37,7 @@ public class exam01 {
         }
 
         Collections.sort(plus);
-        Collections.sort(minus, Comparator.reverseOrder());
+        minus.sort(Comparator.reverseOrder());
 
         if(N == 1) {
             System.out.println(books[0]);
@@ -44,8 +45,14 @@ public class exam01 {
         }
 
         int answer = 0;
-        boolean isBigPlus =
-            Math.abs(Collections.max(plus)) >= Math.abs(Collections.min(minus));
+        boolean isBigPlus;
+        if(plus.isEmpty()) {
+            isBigPlus = false;
+        }else if(minus.isEmpty()) {
+            isBigPlus = true;
+        }else {
+            isBigPlus = Math.abs(Collections.max(plus)) >= Math.abs(Collections.min(minus));
+        }
 
         int minusCnt = minus.size();
         int plusCnt = plus.size();
