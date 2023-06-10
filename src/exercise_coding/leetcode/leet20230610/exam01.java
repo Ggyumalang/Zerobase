@@ -1,3 +1,4 @@
+//leetcode Binary Tree Level Order Traversal
 package exercise_coding.leetcode.leet20230610;
 
 import java.util.ArrayList;
@@ -26,11 +27,12 @@ public class exam01 {
 
     public static List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> answers = new ArrayList<>();
-        answers.add(new ArrayList<>(List.of(root.val)));
+        if(root == null) return answers;
 
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
+            System.out.println(queue);
             int levels = queue.size();
             List<Integer> subLevels = new ArrayList<>();
 
@@ -49,7 +51,5 @@ public class exam01 {
 
 
         return answers;
-
-
     }
 }
