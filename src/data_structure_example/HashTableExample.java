@@ -1,4 +1,4 @@
-package for_easy_use;
+package data_structure_example;
 
 import java.util.Hashtable;
 
